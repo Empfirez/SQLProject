@@ -77,12 +77,37 @@ Cumulative sum of weekly sales for each store:
      ORDER BY Store, Date;
 
 
+Comparing average weekly sales during holidays and non-holidays:
+
+	SELECT AVG(Weekly_Sales) as avg_weekly_sales, Holiday_Flag,
+		CASE  WHEN Holiday_Flag = 1 THEN 'Holiday'
+		      WHEN Holiday_Flag = 0 THEN 'Non-Holiday'
+		END AS Holiday_Type
+	FROM walmart_sales
+	GROUP BY Holiday_Flag;
+
+
+Looking at the peak sales period per year:
+
+	WITH peak_sales AS
+		(SELECT MAX(Weekly_Sales) as Peak_Sales, Year(Date) AS Year
+		FROM walmart_sales
+		GROUP BY Year(Date))
+	SELECT p.Peak_Sales, p.Year, w.Date as Peak_Period
+	FROM peak_sales p
+	JOIN walmart_sales w
+	ON p.Peak_Sales = w.Weekly_Sales
+	AND p.year = Year(w.Date)
+	ORDER BY Date
 
 
 
 
 ### Results/Findings
-
+After careful analysis, the results are as follows:
+1. Store 20 has the highest sales amount of $301,397,792.46 while Store 33 has the lowest sales amount of $37,160,221.96.
+2. 
+3. 
 
 
 ### Recommendations
