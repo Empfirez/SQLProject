@@ -107,14 +107,21 @@ Looking at the peak sales period per year:
 
 After careful analysis, the results are as follows:
 1. Store 20 has the highest sales amount of $301,397,792.46 while Store 33 has the lowest sales amount of $37,160,221.96.
-2. Sales revenue has been slowly rising over the past 3 years, with sales peaking around December.
-3. Average CPI and fuel prices have been increasing over time, with fuel prices increasing significantly from 2010 to 2011.
+2. Sales revenue has been slowly rising over the past 3 years, with sales peaking around December each year. This increase in sales is likely due to the holiday season where people are busy shopping for Christmas
+   goods and decorations.
+3. Average CPI and fuel prices have been gradually increasing over time, with fuel prices increasing significantly from 2010 to 2011.
 4. There is no significant correlation between fuel prices and sales revenue.
 5. Average sales are at their highest during holiday seasons regardless of CPI or fuel prices.
-6. Average sales are the lowest when the temperature is hot(>25 degrees) while sales are the highest when the temperature is moderate(between 0 and 25).  
+6. Average sales are the lowest when the temperature is hot(>25 degrees) while sales are the highest when the temperature is moderate(between 0 degrees and 25 degrees).
+  
 
 
 ### Recommendations
+
+Based on analysis above, here are some recommended actions to take in order to increase sales revenue:
+1. 
+
+
 
 
 
