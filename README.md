@@ -61,9 +61,9 @@ EDA is used to summarize the sales data and allows us gain a deeper understandin
 Cumulative sum of weekly sales for each store:
 
      SELECT Store, Date, Weekly_Sales,
-	   SUM(Weekly_Sales) OVER(
-	   PARTITION BY Store
-	   ORDER BY Date) AS Cumulative_Weekly_Sales
+	    SUM(Weekly_Sales) OVER(
+	    PARTITION BY Store
+	    ORDER BY Date) AS Cumulative_Weekly_Sales
      FROM walmart_sales
      ORDER BY Store, Date;
 
@@ -72,10 +72,10 @@ Cumulative sum of weekly sales for each store:
 7 day rolling average of weekly sales for each store:
 
      SELECT Store, Date, Weekly_Sales,
-	   AVG(Weekly_Sales) OVER(
-	   PARTITION BY Store
-	   ORDER BY Date
-	   ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS Rolling_Avg_Weekly_Sales, Holiday_Flag
+	    AVG(Weekly_Sales) OVER(
+	    PARTITION BY Store
+	    ORDER BY Date
+	    ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS Rolling_Avg_Weekly_Sales, Holiday_Flag
      FROM walmart_sales
      ORDER BY Store, Date;
 
@@ -83,9 +83,9 @@ Cumulative sum of weekly sales for each store:
 Comparing average weekly sales during holidays and non-holidays:
 
 	SELECT AVG(Weekly_Sales) as avg_weekly_sales, Holiday_Flag,
-		CASE  WHEN Holiday_Flag = 1 THEN 'Holiday'
-		      WHEN Holiday_Flag = 0 THEN 'Non-Holiday'
-		END AS Holiday_Type
+	       CASE  WHEN Holiday_Flag = 1 THEN 'Holiday'
+		     WHEN Holiday_Flag = 0 THEN 'Non-Holiday'
+	       END AS Holiday_Type
 	FROM walmart_sales
 	GROUP BY Holiday_Flag;
 
@@ -93,9 +93,9 @@ Comparing average weekly sales during holidays and non-holidays:
 Looking at the peak sales period per year:
 
 	WITH peak_sales AS
-		(SELECT MAX(Weekly_Sales) as Peak_Sales, Year(Date) AS Year
-		FROM walmart_sales
-		GROUP BY Year(Date))
+	     (SELECT MAX(Weekly_Sales) as Peak_Sales, Year(Date) AS Year
+	      FROM walmart_sales
+	      GROUP BY Year(Date))
 	SELECT p.Peak_Sales, p.Year, w.Date as Peak_Period
 	FROM peak_sales p
 	JOIN walmart_sales w
