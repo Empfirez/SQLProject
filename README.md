@@ -18,7 +18,7 @@
 
 
 ### Project Overview
-This data analysis project aims to uncover insights into the sales performance of Walmart through the analysis of its sales data. By analyzing certain key aspects of the dataset such as temperature, holidays and fuel prices, we aim to gain a deeper understanding of how certain factors affect sales performance as well as the extent of the impact. Through our findings, we hope to provide data-driven recommendations to help raise sales revenue for Walmart and ultimately improve its profitability.
+This data analysis project aims to uncover insights into the sales performance of Walmart through the analysis of its sales data. By analyzing certain key aspects of the dataset such as temperature, holidays and fuel prices, we aim to gain a deeper understanding of how certain factors affect sales performance as well as the extent of the impact. Through our findings, we hope to provide data-driven recommendations to help raise sales revenue for Walmart.
 
 
 ![image](https://github.com/user-attachments/assets/165cc2e9-65a3-4ab2-9269-dceddb054449)
@@ -54,6 +54,7 @@ EDA is used to summarize the sales data and allows us gain a deeper understandin
 -  Which store performed the best and which store performed the worst?
 -  What is the average weekly sales during holiday periods and non-holiday periods?
 -  What are the peak sales periods for each year?
+-  Do factors such as fuel price, CPI, holidays and temperature affect sales revenue?
 
 
 ### Data Analysis
@@ -123,12 +124,12 @@ After careful analysis, the results are as follows:
 
 Based on analysis above, here are some recommended actions to take in order to increase sales revenue:
 1. Offering special promotions during peak seasons to maximise revenue and attract more customers.
-2. Analyzing the differences between Store 20 and Store 33 to figure out the reasons behind the large discrepancy in sales. For instance promotions, propduct placement, store environment, customer service, location.
+2. Analyzing the differences between Store 20 and Store 33 to figure out the reasons behind the large discrepancy in sales. For instance promotions, product placement, store environment, customer service, location.
 3. As sales drop during hotter days, Walmart can run targeted promotions on specific products such as beverages, cooling applicances and swimwear.
 4. During hotter days where customers are reluctant to shop in physical stores, Walmart can increase sales by offering discount vouchers whenever consumers shop online. 
 5. As sales are the highest in moderate temperatures, more emphasis should be placed on outdoor products such as gardening tools, sports apparel as well as sports equipment. Beauty products may also see a rise in sales
    as people tend to repair their damaged skin and hair after cold periods.
-6. Since CPI and fuel prices do not affect sales significantly, Walmart should focus on their customer service and increasing customer satisfaction so as to build a more loyal consumer base.  
+6. Since CPI and fuel prices do not affect sales significantly, Walmart should focus on their customer service and increasing customer satisfaction so as to build a more loyal customer base.  
 
 
 
